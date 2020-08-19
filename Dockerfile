@@ -11,10 +11,8 @@ ARG USER
 RUN addgroup --gid $GROUP_ID $USER
 RUN adduser --disabled-password --gecos '' --uid $USER_ID --gid $GROUP_ID $USER
 
-# Create conda environment
-WORKDIR /workspace/conda
-
+# Create conda env
+WORKDIR /workspace
 COPY env.yml .
 RUN conda env create -f env.yml
 
-WORKDIR /workspace
