@@ -23,7 +23,7 @@ if __name__ == '__main__':
     opt = torch.optim.Adam([inp], lr=args.learning_rate)
     crt = torch.nn.MSELoss()
 
-    for e in range(200):
+    for e in range(args.epochs):
         opt.zero_grad()
         loss = crt(inp, tar)
         loss.backward()
