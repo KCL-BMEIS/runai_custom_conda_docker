@@ -9,7 +9,7 @@ sh build_docker.sh
 ```
 
 ## Submit a Job
-A job can be submitted via `runai submit`. The complete call is safed inside the [submit.sh](submit.sh) bash script, e.g. call
+A job can be submitted via `runai submit`. The complete call is safed inside the [submit.sh](submit.sh) bash script, call
 
 ```shell
 sh submit.sh
