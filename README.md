@@ -1,4 +1,4 @@
-# Runai
+# Runai with Conda
 This sample project builds a custom Docker image with conda environment that is passed to the `runai` GPU distribution layer.
 
 ## Docker
