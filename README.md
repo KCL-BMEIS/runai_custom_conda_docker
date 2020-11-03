@@ -9,7 +9,11 @@ sh build_docker.sh
 ```
 
 ## Submit a Job
-A job can be submitted via `runai submit`. The complete call is safed inside the [submit.sh](submit.sh) bash script.
+A job can be submitted via `runai submit`. The complete call is safed inside the [submit.sh](submit.sh) bash script, e.g. call
+
+```shell
+sh submit.sh
+```
 
 ### Run a Python Script
 The submit shell script also calls the [run.sh](run.sh) shell script via the `--command` flag. This script activates `conda` and the `toy` environment, and executes the [toy.py](toy.py) Python script.
